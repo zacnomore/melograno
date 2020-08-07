@@ -1,15 +1,23 @@
+import React from "react";
 
-const Clock = () => (
-  <div className="circle">
-    <div className="hand seconds"></div>
-    <div className="hand minutes"></div>
-    <div className="hand hours"></div>
-    <style jsx>{`
+export default class Clock extends React.Component {
+  state: {
+    time: Date;
+  };
 
-    `}</style>
-  </div>
+  constructor(props: {}) {
+    super(props);
+    this.state = {
+      time: new Date()
+    };
+  }
 
-);
-
-
-export default Clock;
+  render() {
+    return (
+    <div className="circle">
+      <div className="hand seconds">{this.state.time.getSeconds()}</div>
+      <div className="hand minutes">{this.state.time.getMinutes()}</div>
+      <div className="hand hours">{this.state.time.getHours()}</div>
+    </div>);
+  }
+}
