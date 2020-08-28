@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Clock from '../components/Clock';
 
 const Home = () => (
   <div className="container">
@@ -9,7 +8,7 @@ const Home = () => (
     </Head>
 
     <main>
-      <Clock></Clock>
+
     </main>
 
     <footer>
