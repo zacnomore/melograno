@@ -1,0 +1,30 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Docs/Introduction" />
+
+# Welcome!
+
+It is not necessary or helpful to read through all of the documentation. This is written to be understandable by all which means it will cover topics which many will already know.
+
+If you scan through the headings and page titles you should be able to find what you need. If you can't, please file an issue!
+
+## What is this?
+
+You are currently viewing the component library for the app *Melograno*. The component library is a place for development and design to meet. The components viewable from
+the component side-panel are using mock data to show the variety and limits of what they can do. When developing new UI or identifying existing UI to use, this is the place
+to go.
+
+## Terminology
+
+This library is divided into *components*, *compositions* and *features*. Do not confuse the React component with the components here. A feature is a React component but it is not
+a design component.
+
+**Components** are the atomic pieces that make up everything else. They should consist of one component and they will most often not have many child components. They need to be reusable, fully
+encapsulated, interchangable with similar components and as flexible as is useful. A button or icon would be a component.
+
+**Compositions** are collected components and possibly include other compositions. They are not fully contextualized but they do suggest a kind of feature. They should also be fully
+encapsulated. A list composed of list items and a header would be a composition.
+
+**Features** are purpose-built for a specific functionality. They are built of compositions mainly and some components. They should reflect a specific,
+contextualized and independent parts of the application. They can be as large as a page but may also be a small "widget" as long as they are self-contained
+and useful in testing the limits of that UI. The *Inbox* panel or the *Next Actions* page would be features.
