@@ -1,5 +1,5 @@
 import React from 'react';
-import Inbox, { InboxProps } from '../../components/Inbox';
+import Inbox, { InboxProps } from '../../library/features/Inbox';
 import { Story } from '@storybook/react';
 
 export default {
