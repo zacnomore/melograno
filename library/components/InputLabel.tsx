@@ -10,15 +10,14 @@ export enum LabelPosition {
 
 export interface InputLabelProps {
   text: string;
-  slot: Element | Component;
   position?: LabelPosition
 }
 
 
-const InputLabel: FunctionComponent<InputLabelProps> = ({slot, text, position = 0}) => (
+const InputLabel: FunctionComponent<InputLabelProps> = ({children, text, position = 0}) => (
   <label>
     {[LabelPosition.Top, LabelPosition.Left].includes(position) ? text : ''}
-    {slot}
+    {children}
     {[LabelPosition.Right, LabelPosition.Bottom].includes(position) ? text : ''}
   </label>
 );

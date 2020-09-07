@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from "react";
 import TextInput from "../components/TextInput";
+import InputLabel from "../components/InputLabel";
 
 export interface InboxProps {
   test: string
@@ -7,7 +8,9 @@ export interface InboxProps {
 
 
 const Inbox: FunctionComponent<InboxProps> = (props) => (
-  <TextInput></TextInput>
+  <InputLabel text='Inbox'>
+    <TextInput />
+  </InputLabel>
 );
 
 export default Inbox;
